@@ -1,0 +1,14 @@
+{
+    "template": "<div ng-if=\"itemValue(config.temptrend)==1\">\n   <widget-icon iconset=\"'eclipse-smarthome-classic'\" icon=\"'flowpipe'\"/>\n</div>\n<div ng-if=\"itemValue(config.temptrend)!=1\">\n   <widget-icon iconset=\"'eclipse-smarthome-classic'\" icon=\"'returnpipe'\"/>\n</div>",
+    "name": "Temperature Trend",
+    "author": "mag2000",
+    "settings": [
+        {
+            "type": "item",
+            "id": "temptrend",
+            "label": "Trend",
+            "default": "0",
+            "description": "If the item has a value of 1 an up icon is shown, otherwise a down icon"
+        }
+    ]
+}
